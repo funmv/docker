@@ -4,6 +4,8 @@
 # CUDA 및 Ubuntu 버전 설정: 21.8Gb크기의 이미지 생성 성공 (09/20/2024)
 #                          14.7Gb크기에 비해 큼 (ubuntu, cuda버전 차이??)
 # Docker허브에 매칭되는 이미지가 있어야 한다. 다운받아 여기서부터 시작
+# 빌드 명령 > docker build -t my_cctv . 
+# 
 ARG CUDA_VERSION=11.8.0
 ARG CUDNN_VERSION=8
 ARG UBUNTU_VERSION=22.04
