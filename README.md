@@ -1,4 +1,6 @@
 DOCKER for gstreamer + opencv + ray + yolov8  
+[작업 위치] Dockerfile: G:\2024\Docker-opencv-GPU  
+[작업 위치] docker_run.py: G:\2023_yolov8\bentoml_test\BentoYolo  
   
 ***** 도커 이미지 작성 절차 *****  
 (1) mobaxterm 아래서 container 안으로 진입  
