@@ -5,6 +5,9 @@ DOCKER for gstreamer + opencv + ray + yolov8
 ***** 도커 이미지 작성 절차 *****  
 (1) mobaxterm 아래서 container 안으로 진입  
  docker run --gpus all -it --rm -e DISPLAY=host.docker.internal:0.0 -v /g/2023_yolov8/bentoml_test/BentoYolo:/myapp -v /tmp/.X11-unix:/tmp/.X11-unix fizmath/gpu-opencv:latest  
+ [배경설명] MobaXterm에서 모든 것을 실행 했음. MobaXterm은 자체로 xterminal을 가지고 있어서, docker container 내부에 생성된 display를 host에서 보여줄 수 있음.  
+           이를 위해, -e DISPLAY=host.docker.internal:0.0 옵션을 사용  
+   
 (2) container 내에서 ray, ultralytics 설치   
  pip install ray ultralytics  
 (3) ultralytics의 cv2와 gstreamer의 cv2가 충돌하므로 제거해 줌  
