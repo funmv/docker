@@ -1,6 +1,8 @@
 DOCKER for gstreamer + opencv + ray + yolov8  
 [작업 위치] Dockerfile: G:\2024\Docker-opencv-GPU  
 [작업 위치] docker_run.py: G:\2023_yolov8\bentoml_test\BentoYolo  
+[결과] Dockerfile로 mabaxterm에서 docker image 만들 경우 약 21Gb 이미지 생성 (너무 큼)  
+      fizmath/gpu-opencv:latest를 이용하고 container 진입 후, ray, ultralytics설치 한 후 commit으로 이미지 생성 (약 14Gb)   
   
 ***** 도커 이미지 작성 절차 *****  
 (1) 아래 명령을 실행하여 mobaxterm 아래서 container 안으로 진입  
